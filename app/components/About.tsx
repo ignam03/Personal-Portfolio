@@ -1,30 +1,30 @@
-import { FiAward, FiBriefcase, FiCode, FiServer } from 'react-icons/fi';
-import { personalInfo, stats } from '@/app/data';
+import { FiAward, FiBriefcase, FiCode, FiServer } from "react-icons/fi";
+import { personalInfo, stats } from "@/app/data";
 
 const highlights = [
   {
     icon: FiServer,
-    title: 'Serverless & AWS',
+    title: "Serverless & AWS",
     description:
-      'Diseño e implemento arquitecturas sin servidor con Lambda, S3, DynamoDB y API Gateway. CDK como IaC.',
+      "Diseño e implemento arquitecturas sin servidor con Lambda, S3, DynamoDB y API Gateway. CDK como IaC.",
   },
   {
     icon: FiCode,
-    title: 'Full Stack moderno',
+    title: "Full Stack moderno",
     description:
-      'Node.js + NestJS en backend y Next.js/React en frontend. TypeScript end-to-end y arquitecturas limpias.',
+      "Node.js + NestJS en backend y Next.js/React en frontend. TypeScript end-to-end y arquitecturas limpias.",
   },
   {
     icon: FiBriefcase,
-    title: 'CI/CD & DevOps',
+    title: "CI/CD & DevOps",
     description:
-      'Pipelines con GitHub Actions, containerización con Docker, monitoreo con CloudWatch y scripting.',
+      "Pipelines con GitHub Actions, containerización con Docker, monitoreo con CloudWatch y scripting.",
   },
   {
     icon: FiAward,
-    title: 'Docente & Mentor',
+    title: "Docente & Mentor",
     description:
-      'Profesor backend en EducaciónIT y tutor en CoderHouse. Me gusta devolver a la comunidad.',
+      "Profesor backend en EducaciónIT y tutor en CoderHouse. Me gusta devolver a la comunidad.",
   },
 ];
 
@@ -39,12 +39,10 @@ export default function About() {
             01 — Sobre mí
           </span>
           <h2 className="section-title">
-            El <span className="gradient-text">puente</span> entre desarrollo
-            y operaciones.
+            El <span className="gradient-text">puente</span> entre desarrollo y
+            operaciones.
           </h2>
-          <p className="section-subtitle mt-4">
-            {personalInfo.bio}
-          </p>
+          <p className="section-subtitle mt-4">{personalInfo.bio}</p>
         </div>
 
         {/* Stats */}
@@ -70,7 +68,9 @@ export default function About() {
           {/* Quote card */}
           <div className="card gradient-border">
             <div className="flex items-start gap-4 mb-6">
-              <span className="text-5xl text-primary-400 leading-none font-serif">"</span>
+              <span className="text-5xl text-primary-400 leading-none font-serif">
+                "
+              </span>
               <p className="text-lg sm:text-xl text-slate-200 leading-relaxed font-light italic">
                 {personalInfo.profile}
               </p>

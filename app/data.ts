@@ -10,8 +10,8 @@ export const personalInfo = {
   bio: 'Desarrollador Software con 5+ años de experiencia en Node.js y conocimientos en Java y Python, complementados con una sólida formación en prácticas DevOps. Especialista en arquitecturas serverless en AWS (Lambda, S3, EC2, CloudWatch), diseño e implementación de pipelines CI/CD, contenedores con Docker y automatización con scripting (Bash/Python).',
   profile: 'Apasionado por la integración entre desarrollo y operaciones, busco optimizar el ciclo de vida del software, reduciendo tiempos de entrega y garantizando la calidad mediante monitoreo, trazabilidad y mejora continua. Proactivo, autodidacta y colaborativo, con amplia experiencia en equipos ágiles (Scrum, Kanban) y herramientas de gestión como Jira, GitHub y Postman.',
   social: {
-    github: 'https://github.com/carlosmadrigal',
-    linkedin: 'https://www.linkedin.com/in/carlosmadrigal',
+    github: 'https://github.com/ignam03',
+    linkedin: 'https://www.linkedin.com/in/carlos-madrigal-7344161b1/',
     personalWeb: 'https://carlosmadrigal.dev',
   },
   status: 'Disponible para nuevos retos',
