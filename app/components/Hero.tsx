@@ -44,15 +44,15 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-slate-400 max-w-2xl text-balance leading-relaxed">
-                {personalInfo.tagline}. Apasionado por el{" "}
+                {personalInfo.tagline}. Apasionado por el{' '}
                 <span className="text-primary-300 font-semibold">
                   serverless
                 </span>
-                , la{" "}
+                , la{' '}
                 <span className="text-primary-300 font-semibold">
                   automatización
-                </span>{" "}
-                y los{" "}
+                </span>
+                {' '}y los{' '}
                 <span className="text-primary-300 font-semibold">
                   pipelines CI/CD
                 </span>
@@ -138,41 +138,41 @@ export default function Hero() {
               <pre className="p-6 text-sm font-mono leading-7 text-slate-300 overflow-x-auto">
                 <code>
                   <span className="text-accent-pink">{"{"}</span>
-                  {"\n"}
-                  {"  "}
-                  <span className="text-primary-300">"name"</span>:{" "}
+                  {'\n'}
+                  {'  '}
+                  <span className="text-primary-300">name</span>:{' '}
                   <span className="text-green-400">"Carlos I. Madrigal"</span>,
-                  {"\n"}
-                  {"  "}
-                  <span className="text-primary-300">"role"</span>:{" "}
+                  {'\n'}
+                  {'  '}
+                  <span className="text-primary-300">role</span>:{' '}
                   <span className="text-green-400">"Full Stack & DevOps"</span>,
-                  {"\n"}
-                  {"  "}
-                  <span className="text-primary-300">"stack"</span>:{" "}
+                  {'\n'}
+                  {'  '}
+                  <span className="text-primary-300">stack</span>:{' '}
                   <span className="text-accent-pink">[</span>
-                  {"\n"}
-                  {"    "}
-                  <span className="text-green-400">"Node.js"</span>,{" "}
-                  <span className="text-green-400">"NestJS"</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-400">"React"</span>,{" "}
-                  <span className="text-green-400">"Next.js"</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-400">"AWS Lambda"</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-400">"Docker"</span>,{"\n"}
-                  {"    "}
+                  {'\n'}
+                  {'    '}
+                  <span className="text-green-400">"Node.js"</span>,{' '}
+                  <span className="text-green-400">"NestJS"</span>,{'\n'}
+                  {'    '}
+                  <span className="text-green-400">"React"</span>,{' '}
+                  <span className="text-green-400">"Next.js"</span>,{'\n'}
+                  {'    '}
+                  <span className="text-green-400">"AWS Lambda"</span>,{'\n'}
+                  {'    '}
+                  <span className="text-green-400">"Docker"</span>,{'\n'}
+                  {'    '}
                   <span className="text-green-400">"CI/CD"</span>
-                  {"\n"}
-                  {"  "}
-                  <span className="text-accent-pink">]</span>,{"\n"}
-                  {"  "}
-                  <span className="text-primary-300">"passion"</span>:{" "}
-                  <span className="text-green-400">"serverless"</span>,{"\n"}
-                  {"  "}
-                  <span className="text-primary-300">"available"</span>:{" "}
+                  {'\n'}
+                  {'  '}
+                  <span className="text-accent-pink">]</span>,{'\n'}
+                  {'  '}
+                  <span className="text-primary-300">passion</span>:{' '}
+                  <span className="text-green-400">"serverless"</span>,{'\n'}
+                  {'  '}
+                  <span className="text-primary-300">available</span>:{' '}
                   <span className="text-accent-pink">true</span>
-                  {"\n"}
+                  {'\n'}
                   <span className="text-accent-pink">{"}"}</span>
                 </code>
               </pre>
