@@ -69,12 +69,16 @@ export default function About() {
           <div className="card gradient-border">
             <div className="flex items-start gap-4 mb-6">
               <span className="text-5xl text-primary-400 leading-none font-serif">
-                "
+                &quot;
               </span>
               <p className="text-lg sm:text-xl text-slate-200 leading-relaxed font-light italic">
                 {personalInfo.profile}
               </p>
+              <span className="text-5xl text-primary-400 leading-none font-serif">
+                &quot;
+              </span>
             </div>
+
             <div className="flex items-center gap-4 pt-6 border-t border-white/5">
               <div className="grid place-items-center h-12 w-12 rounded-full bg-gradient-to-br from-primary-400 to-accent-purple text-slate-950 font-black">
                 CM

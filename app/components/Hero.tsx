@@ -140,15 +140,15 @@ export default function Hero() {
                   <span className="text-accent-pink">{"{"}</span>
                   {"\n"}
                   {"  "}
-                  <span className="text-primary-300">"name"</span>:{" "}
+                  <span className="text-primary-300">'name'</span>:{" "}
                   <span className="text-green-400">"Carlos I. Madrigal"</span>,
                   {"\n"}
                   {"  "}
-                  <span className="text-primary-300">"role"</span>:{" "}
+                  <span className="text-primary-300">'role'</span>:{" "}
                   <span className="text-green-400">"Full Stack & DevOps"</span>,
                   {"\n"}
                   {"  "}
-                  <span className="text-primary-300">"stack"</span>:{" "}
+                  <span className="text-primary-300">'stack'</span>:{" "}
                   <span className="text-accent-pink">[</span>
                   {"\n"}
                   {"    "}
@@ -167,10 +167,10 @@ export default function Hero() {
                   {"  "}
                   <span className="text-accent-pink">]</span>,{"\n"}
                   {"  "}
-                  <span className="text-primary-300">"passion"</span>:{" "}
+                  <span className="text-primary-300">passion</span>:{" "}
                   <span className="text-green-400">"serverless"</span>,{"\n"}
                   {"  "}
-                  <span className="text-primary-300">"available"</span>:{" "}
+                  <span className="text-primary-300">available</span>:{" "}
                   <span className="text-accent-pink">true</span>
                   {"\n"}
                   <span className="text-accent-pink">{"}"}</span>
