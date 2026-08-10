@@ -117,37 +117,7 @@ jobs:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
   # ──────────────────────────────────────────────────────────
-  # Job 4 · Deploy a Vercel (solo en push a main)
-  # ──────────────────────────────────────────────────────────
-  deploy:
-    name: Deploy to Vercel
-    runs-on: ubuntu-latest
-    needs: [build, security]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    environment:
-      name: production
-      url: ${{ steps.deploy.outputs.url }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install Vercel CLI
-        run: npm install -g vercel@latest
-
-      - name: Pull Vercel config
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-        working-directory: .
-
-      - name: Build project
-        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
-        working-directory: .
-
-      - name: Deploy to Vercel
-        id: deploy
-        run: vercel deploy --yes --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
-        working-directory: .
-
-  # ──────────────────────────────────────────────────────────
-  # Job 5 · Comment con métricas en el PR
+  # Job 4 · Comment con métricas en el PR
   # ──────────────────────────────────────────────────────────
   comment:
     name: Comment PR Summary
