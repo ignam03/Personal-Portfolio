@@ -1,7 +1,13 @@
-'use client';
+"use client";
 
-import { FiArrowDown, FiGithub, FiLinkedin, FiMail, FiMapPin } from 'react-icons/fi';
-import { personalInfo } from '@/app/data';
+import {
+  FiArrowDown,
+  FiGithub,
+  FiLinkedin,
+  FiMail,
+  FiMapPin,
+} from "react-icons/fi";
+import { personalInfo } from "@/app/data";
 
 export default function Hero() {
   return (
@@ -39,15 +45,25 @@ export default function Hero() {
               </h1>
               <p className="text-lg sm:text-xl text-slate-400 max-w-2xl text-balance leading-relaxed">
                 {personalInfo.tagline}. Apasionado por el{' '}
-                <span className="text-primary-300 font-semibold">serverless</span>, la{' '}
-                <span className="text-primary-300 font-semibold">automatización</span> y los{' '}
-                <span className="text-primary-300 font-semibold">pipelines CI/CD</span>.
+                <span className="text-primary-300 font-semibold">
+                  serverless
+                </span>
+                , la{' '}
+                <span className="text-primary-300 font-semibold">
+                  automatización
+                </span>
+                {' '}y los{' '}
+                <span className="text-primary-300 font-semibold">
+                  pipelines CI/CD
+                </span>
+                .
               </p>
             </div>
 
             <div className="flex flex-wrap items-center gap-3 text-sm text-slate-400 opacity-0 animate-fade-in-up delay-300">
               <span className="inline-flex items-center gap-2">
-                <FiMapPin className="text-primary-400" /> {personalInfo.location}
+                <FiMapPin className="text-primary-400" />{" "}
+                {personalInfo.location}
               </span>
               <span className="h-1 w-1 rounded-full bg-slate-600" />
               <span className="inline-flex items-center gap-2">
@@ -56,17 +72,13 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-wrap items-center gap-4 opacity-0 animate-fade-in-up delay-500">
-              <a
-                href="#contact"
-                className="btn-primary group"
-              >
+              <a href="#contact" className="btn-primary group">
                 Trabajemos juntos
-                <span className="transition-transform group-hover:translate-x-1">→</span>
+                <span className="transition-transform group-hover:translate-x-1">
+                  →
+                </span>
               </a>
-              <a
-                href="#experience"
-                className="btn-secondary"
-              >
+              <a href="#experience" className="btn-secondary">
                 Ver experiencia
               </a>
             </div>
@@ -117,32 +129,51 @@ export default function Hero() {
                   <span className="h-3 w-3 rounded-full bg-yellow-400/80" />
                   <span className="h-3 w-3 rounded-full bg-green-400/80" />
                 </div>
-                <span className="text-xs font-mono text-slate-400">~/carlos-madrigal.json</span>
+                <span className="text-xs font-mono text-slate-400">
+                  ~/carlos-madrigal.json
+                </span>
                 <span className="text-xs text-slate-500">JSON</span>
               </div>
               {/* Code */}
               <pre className="p-6 text-sm font-mono leading-7 text-slate-300 overflow-x-auto">
                 <code>
-                  <span className="text-accent-pink">{'{'}</span>{'\n'}
-                  {'  '}<span className="text-primary-300">"name"</span>:{' '}
-                  <span className="text-green-400">"Carlos I. Madrigal"</span>,{'\n'}
-                  {'  '}<span className="text-primary-300">"role"</span>:{' '}
-                  <span className="text-green-400">"Full Stack & DevOps"</span>,{'\n'}
-                  {'  '}<span className="text-primary-300">"stack"</span>:{' '}
-                  <span className="text-accent-pink">[</span>{'\n'}
-                  {'    '}<span className="text-green-400">"Node.js"</span>,{' '}
+                  <span className="text-accent-pink">{"{"}</span>
+                  {'\n'}
+                  {'  '}
+                  <span className="text-primary-300">name</span>:{' '}
+                  <span className="text-green-400">"Carlos I. Madrigal"</span>,
+                  {'\n'}
+                  {'  '}
+                  <span className="text-primary-300">role</span>:{' '}
+                  <span className="text-green-400">"Full Stack & DevOps"</span>,
+                  {'\n'}
+                  {'  '}
+                  <span className="text-primary-300">stack</span>:{' '}
+                  <span className="text-accent-pink">[</span>
+                  {'\n'}
+                  {'    '}
+                  <span className="text-green-400">"Node.js"</span>,{' '}
                   <span className="text-green-400">"NestJS"</span>,{'\n'}
-                  {'    '}<span className="text-green-400">"React"</span>,{' '}
+                  {'    '}
+                  <span className="text-green-400">"React"</span>,{' '}
                   <span className="text-green-400">"Next.js"</span>,{'\n'}
-                  {'    '}<span className="text-green-400">"AWS Lambda"</span>,{'\n'}
-                  {'    '}<span className="text-green-400">"Docker"</span>,{'\n'}
-                  {'    '}<span className="text-green-400">"CI/CD"</span>{'\n'}
-                  {'  '}<span className="text-accent-pink">]</span>,{'\n'}
-                  {'  '}<span className="text-primary-300">"passion"</span>:{' '}
+                  {'    '}
+                  <span className="text-green-400">"AWS Lambda"</span>,{'\n'}
+                  {'    '}
+                  <span className="text-green-400">"Docker"</span>,{'\n'}
+                  {'    '}
+                  <span className="text-green-400">"CI/CD"</span>
+                  {'\n'}
+                  {'  '}
+                  <span className="text-accent-pink">]</span>,{'\n'}
+                  {'  '}
+                  <span className="text-primary-300">passion</span>:{' '}
                   <span className="text-green-400">"serverless"</span>,{'\n'}
-                  {'  '}<span className="text-primary-300">"available"</span>:{' '}
-                  <span className="text-accent-pink">true</span>{'\n'}
-                  <span className="text-accent-pink">{'}'}</span>
+                  {'  '}
+                  <span className="text-primary-300">available</span>:{' '}
+                  <span className="text-accent-pink">true</span>
+                  {'\n'}
+                  <span className="text-accent-pink">{"}"}</span>
                 </code>
               </pre>
             </div>
