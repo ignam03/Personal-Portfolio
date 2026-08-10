@@ -124,6 +124,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
     needs: [build, security]
+    permissions:
+      pull-requests: write
+      issues: write
     steps:
       - uses: actions/checkout@v4
       - name: Post summary comment
@@ -137,7 +140,7 @@ jobs:
             |---|---|
             | Lint | ✅ |
             | Typecheck | ✅ |
-            | Build (Node 18 & 20) | ✅ |
+            | Build (Node 20 & 22) | ✅ |
             | CodeQL | ✅ |
             `;
             github.rest.issues.createComment({
