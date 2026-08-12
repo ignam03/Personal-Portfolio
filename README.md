@@ -24,13 +24,18 @@ app/
 │   ├── About.tsx         # Perfil + stats + highlights
 │   ├── Skills.tsx        # Skills con tabs y barras de progreso
 │   ├── Experience.tsx    # Timeline de experiencia
+│   ├── Projects.tsx      # Proyectos personales con filtros
 │   ├── Education.tsx     # Formación + idiomas
-│   ├── Contact.tsx       # Canales + CTA final
+│   ├── Contact.tsx       # Canales + CTA final + descarga CV
+│   ├── CVDownload.tsx    # Botón reutilizable de descarga de CV
 │   └── Footer.tsx        # Footer minimal
 ├── data.ts               # Toda la información personal/edit-able
 ├── globals.css           # Estilos globales + animaciones
 ├── layout.tsx            # SEO, fuentes, JSON-LD, metadata
 └── page.tsx              # Composición de la home
+public/
+├── favicon.svg           # Icono del sitio
+└── cv/                   # Coloque aquí su CV en PDF
 ```
 
 ## Instalación
@@ -57,6 +62,7 @@ Toda la información personal vive en **`app/data.ts`**. Editá:
 - `personalInfo` — nombre, rol, contacto, redes
 - `skills` — tecnologías por categoría
 - `experiences` — historial laboral
+- `projects` — proyectos personales y featured (con filtro por categoría)
 - `education` — formación
 - `stats` — números del Hero
 
@@ -64,6 +70,17 @@ Y en **`app/layout.tsx`** actualizá los metadatos SEO y la URL canónica.
 
 > **Importante:** reemplazá las URLs de GitHub y LinkedIn en
 > `app/data.ts` con tus perfiles reales (`social.github` y `social.linkedin`).
+
+### CV descargable
+
+Para activar el botón **"Descargar CV"**:
+
+1. Exporte su CV a PDF
+2. Coloque el archivo en `public/cv/carlos-madrigal-cv.pdf`
+3. El botón ya estará disponible en el Hero y en la sección de Contacto
+
+Si no coloca el archivo, los botones seguirán apareciendo pero el navegador
+mostrará un 404 al hacer clic — útil mientras lo prepara.
 
 ## Deploy
 
