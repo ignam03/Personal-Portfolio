@@ -264,3 +264,173 @@ export const stats = [
   { value: '15+', label: 'Tecnologías dominadas' },
   { value: '100%', label: 'Serverless lover' },
 ];
+
+export type ProjectCategory =
+  | 'all'
+  | 'web'
+  | 'serverless'
+  | 'api'
+  | 'devops'
+  | 'open-source';
+
+export const projectCategories: { key: ProjectCategory; label: string }[] = [
+  { key: 'all', label: 'Todos' },
+  { key: 'serverless', label: 'Serverless' },
+  { key: 'web', label: 'Web Apps' },
+  { key: 'api', label: 'APIs' },
+  { key: 'devops', label: 'DevOps' },
+  { key: 'open-source', label: 'Open Source' },
+];
+
+export interface Project {
+  title: string;
+  description: string;
+  category: ProjectCategory;
+  tags: string[];
+  features?: string[];
+  featured?: boolean;
+  image?: string;
+  demoUrl?: string;
+  repoUrl?: string;
+  status?: 'completed' | 'in-progress' | 'archived';
+}
+
+export const projects: Project[] = [
+  {
+    title: 'Este Portfolio',
+    description:
+      'Portfolio personal con Next.js 14, TypeScript y Tailwind. Desplegado con CI/CD en GitHub Actions y deploy a Vercel.',
+    category: 'web',
+    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Vercel', 'GitHub Actions'],
+    features: [
+      'SSG con App Router de Next 14',
+      'SEO optimizado (JSON-LD + Open Graph)',
+      'Diseño responsive con tema oscuro',
+      'Pipeline CI con lint, typecheck y build',
+      'Animaciones y microinteracciones custom',
+    ],
+    featured: true,
+    repoUrl: 'https://github.com/carlosmadrigal/portfolio',
+    demoUrl: 'https://carlosmadrigal.dev',
+    status: 'completed',
+  },
+  {
+    title: 'API Serverless en AWS',
+    description:
+      'API REST con AWS Lambda, API Gateway y DynamoDB. Desplegada con AWS CDK como Infrastructure as Code.',
+    category: 'serverless',
+    tags: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'AWS CDK', 'TypeScript'],
+    features: [
+      'Microservicios orientados a eventos',
+      'IaC con AWS CDK en TypeScript',
+      'Observabilidad con CloudWatch',
+      'Throttling y autenticación con API Gateway',
+      'Tests unitarios y de integración',
+    ],
+    featured: true,
+    repoUrl: 'https://github.com/carlosmadrigal/aws-serverless-api',
+    status: 'completed',
+  },
+  {
+    title: 'Plataforma de Firma Digital',
+    description:
+      'SignFlow: plataforma serverless para firma digital de documentos. Procesamiento en tiempo real con S3 + Lambda.',
+    category: 'serverless',
+    tags: ['NestJS', 'React', 'AWS Lambda', 'S3', 'DynamoDB'],
+    features: [
+      'Firma digital de documentos PDF',
+      'Flujos de aprobación configurables',
+      'Notificaciones en tiempo real',
+      'Almacenamiento cifrado en S3',
+      'Auditoría y trazabilidad completa',
+    ],
+    featured: true,
+    repoUrl: 'https://github.com/carlosmadrigal/signflow',
+    status: 'completed',
+  },
+  {
+    title: 'Nido — Boilerplate NestJS Serverless',
+    description:
+      'Starter kit profesional para desplegar APIs NestJS en AWS Lambda + API Gateway. Open source.',
+    category: 'open-source',
+    tags: ['NestJS', 'AWS Lambda', 'Serverless Framework', 'TypeScript'],
+    features: [
+      'Setup de NestJS optimizado para Lambda',
+      'Cold start reducido con tree-shaking',
+      'Configuración de TypeScript estricta',
+      'Tests con Jest',
+      'CI/CD listo con GitHub Actions',
+    ],
+    featured: false,
+    repoUrl: 'https://github.com/carlosmadrigal/nido',
+    status: 'completed',
+  },
+  {
+    title: 'Bookingcars Web',
+    description:
+      'Plataforma de reservas de autos. Frontend con Next.js y backend con NestJS, TypeScript end-to-end.',
+    category: 'web',
+    tags: ['Next.js', 'NestJS', 'TypeScript', 'PostgreSQL'],
+    features: [
+      'Búsqueda y filtrado en tiempo real',
+      'Pasarela de pagos integrada',
+      'Panel de administración',
+      'Sistema de reviews',
+      'Clean Architecture en backend',
+    ],
+    featured: false,
+    demoUrl: 'https://bookingcars.com',
+    status: 'completed',
+  },
+  {
+    title: 'CloudKit DevOps',
+    description:
+      'Conjunto de scripts y templates IaC para pipelines CI/CD con GitHub Actions + deploy a ECS y Lambda.',
+    category: 'devops',
+    tags: ['GitHub Actions', 'AWS', 'Docker', 'Terraform', 'Bash'],
+    features: [
+      'Workflows reutilizables',
+      'Deploy multi-ambiente (dev/staging/prod)',
+      'Scans de seguridad automatizados',
+      'Notificaciones a Slack',
+      'Documentación y ejemplos',
+    ],
+    featured: false,
+    repoUrl: 'https://github.com/carlosmadrigal/cloudkit-devops',
+    status: 'in-progress',
+  },
+  {
+    title: 'TaskFlow API',
+    description:
+      'API REST de gestión de tareas con Java Spring Boot + MySQL. Proyecto académico de arquitectura limpia.',
+    category: 'api',
+    tags: ['Java', 'Spring Boot', 'MySQL', 'JWT'],
+    features: [
+      'CRUD completo con paginación',
+      'Autenticación con JWT',
+      'Documentación con Swagger',
+      'Tests unitarios e integración',
+      'Despliegue con Docker',
+    ],
+    featured: false,
+    repoUrl: 'https://github.com/carlosmadrigal/taskflow-api',
+    status: 'completed',
+  },
+  {
+    title: 'Realtime Dashboard',
+    description:
+      'Dashboard en tiempo real con WebSockets y métricas de AWS CloudWatch. Visualización de logs y métricas.',
+    category: 'web',
+    tags: ['React', 'Node.js', 'WebSockets', 'CloudWatch', 'Chart.js'],
+    features: [
+      'Métricas en vivo con WebSockets',
+      'Gráficos interactivos',
+      'Filtros por servicio AWS',
+      'Alertas configurables',
+      'Exportación de reportes',
+    ],
+    featured: false,
+    repoUrl: 'https://github.com/carlosmadrigal/realtime-dashboard',
+    status: 'archived',
+  },
+];

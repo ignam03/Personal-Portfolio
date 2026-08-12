@@ -11,6 +11,7 @@ import {
   FiSend,
   FiMapPin,
 } from 'react-icons/fi';
+import CVDownload from './CVDownload';
 import { personalInfo } from '@/app/data';
 
 const channels = [
@@ -53,7 +54,7 @@ export default function Contact() {
         <div className="text-center mb-12">
           <span className="badge mb-4">
             <span className="h-1.5 w-1.5 rounded-full bg-primary-400" />
-            05 — Contacto
+            07 — Contacto
           </span>
           <h2 className="section-title">
             ¿Construimos algo <span className="gradient-text">increíble</span>?
@@ -158,7 +159,7 @@ export default function Contact() {
                 </p>
               </div>
 
-              <div className="relative pt-8">
+              <div className="relative pt-8 space-y-3">
                 <a
                   href={`mailto:${personalInfo.email}?subject=${encodeURIComponent(
                     'Propuesta de colaboración',
@@ -169,6 +170,12 @@ export default function Contact() {
                   Enviar email directo
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
+                <CVDownload
+                  variant="secondary"
+                  size="lg"
+                  label="Descargar CV en PDF"
+                  className="w-full justify-center"
+                />
                 <p className="text-xs text-slate-500 text-center mt-4">
                   Respuesta típica en menos de 24 horas.
                 </p>

@@ -19,7 +19,7 @@ export default function Education() {
         <div className="text-center mb-16">
           <span className="badge mb-4">
             <span className="h-1.5 w-1.5 rounded-full bg-primary-400" />
-            04 — Formación
+            06 — Formación
           </span>
           <h2 className="section-title">
             Educación & <span className="gradient-text">aprendizaje continuo</span>
