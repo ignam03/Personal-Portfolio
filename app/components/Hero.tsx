@@ -7,6 +7,7 @@ import {
   FiMail,
   FiMapPin,
 } from "react-icons/fi";
+import CVDownload from "./CVDownload";
 import { personalInfo } from "@/app/data";
 
 export default function Hero() {
@@ -78,6 +79,7 @@ export default function Hero() {
                   →
                 </span>
               </a>
+              <CVDownload variant="secondary" />
               <a href="#experience" className="btn-secondary">
                 Ver experiencia
               </a>
